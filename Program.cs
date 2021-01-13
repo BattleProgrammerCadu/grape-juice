@@ -4,6 +4,29 @@ namespace grapeJuice
 {
     class Program
     {
+            // Função do dado, returna um numero aleatorio de 1 a 6
+            private int Dado(){
+                Random rnd = new Random();
+                return rnd.Next(1,6);  
+            }
+            //Função Combat, retorna o resultado do opção escolhida
+            public int Combat(int opcao,Personagem atacante, Personagem denfensor){
+                switch (opcao)
+                {
+                    //1-ATAQUE
+                    case 1:
+                {
+                    return atacante.SEThp(atacante.GETatk()-denfensor.GETdef());   
+                }
+                    //
+                    /*case 2:
+                    {
+
+                    }*/                
+                    default: 
+                    return 4;
+                }    
+            }
         static void Main(string[] args)
         {
             Personagem p1 = new Personagem(5,1,1,1);
@@ -16,8 +39,8 @@ namespace grapeJuice
             Console.WriteLine($"2-Defender");
             Console.WriteLine($"3-Evasiva");
             string[] escolha = Console.ReadLine().Split(" ");
-            int _opcao = int.Parse(escolha[0]);
-            Combat(_opcao,p2,p1);
+            int _op = int.Parse(escolha[0]);
+            int resposta =Combat(_op,p2,p1);
             Console.WriteLine($"-----------------------------------------");
             /* 
                P1   |  P2
@@ -42,28 +65,7 @@ namespace grapeJuice
             //Console.WriteLine($"Vida do personagem 1= {p1.GEThp()}");
             //Console.WriteLine($"Vida do personagem 2= {p2.GEThp()}");
 
-             // Função do dado, returna um numero aleatorio de 1 a 6
-            private int Dado(){
-                Random rnd = new Random();
-                return rnd.Next(1,6);  
-            }
-            public int Combat(int opcao,Personagem atacante, Personagem denfensor){
-                switch (opcao)
-                {
-                    //1-ATAQUE
-                    case 1:
-                {
-                    return atacante.SEThp(atacante.GETatk()-denfensor.GETdef());   
-                }
-                    //
-                    /*case 2:
-                    {
-
-                    }*/                
-                    default: 
-                    return 1;
-                }    
-            }
+             
         }    
     }
 }
