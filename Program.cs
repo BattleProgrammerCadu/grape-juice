@@ -10,21 +10,20 @@ namespace grapeJuice
                 return rnd.Next(1,6);  
             }
             //Função Combat, retorna o resultado do opção escolhida
-            public int Combat(int opcao,Personagem atacante, Personagem denfensor){
+            int Combat(int opcao,Personagem atacante, Personagem denfensor){
                 switch (opcao)
                 {
                     //1-ATAQUE
                     case 1:
-                {
-                    return atacante.SEThp(atacante.GETatk()-denfensor.GETdef());   
-                }
-                    //
-                    /*case 2:
-                    {
-
-                    }*/                
+                     return atacante.SEThp(atacante.GETatk()-denfensor.GETdef());
+                    
                     default: 
-                    return 4;
+                    return 4;  
+                {
+                    
+                }
+                                 
+                    
                 }    
             }
         static void Main(string[] args)
@@ -41,6 +40,7 @@ namespace grapeJuice
             string[] escolha = Console.ReadLine().Split(" ");
             int _op = int.Parse(escolha[0]);
             int resposta =Combat(_op,p2,p1);
+            
             Console.WriteLine($"-----------------------------------------");
             /* 
                P1   |  P2
