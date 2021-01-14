@@ -25,22 +25,31 @@ namespace grapeJuice
                     return 4;
                 }    
             }
+            //Função para exibir o menu
+            public static string  Menu_Combat(){
+                string _menu;
+                _menu = "-----------MENU COMBAT--------------\n1-Atacar\n2-Defender\n3-Evasiva\n------------------------------------";
+                return _menu;
+            }
         static void Main(string[] args)
         {
             Personagem p1 = new Personagem(5,1,1,1);
             Personagem p2 = new Personagem(3,2,1,2);
             Console.WriteLine($"Vida do personagem 1= {p1.GEThp()}");
             Console.WriteLine($"Vida do personagem 2= {p2.GEThp()}");
-            Console.WriteLine($"Personagem 2 atacando Personagem 1....");
-            Console.WriteLine($"-----------MENU COMBAT--------------");
+            Console.WriteLine("Personagem 2 atacando Personagem 1....");
+            /*Console.WriteLine($"-----------MENU COMBAT--------------");
             Console.WriteLine($"1-Atacar");
             Console.WriteLine($"2-Defender");
             Console.WriteLine($"3-Evasiva");
+            Console.WriteLine($"------------------------------------");
+            */
+            Console.WriteLine(Menu_Combat());
             string[] escolha = Console.ReadLine().Split(" ");
             int _op = int.Parse(escolha[0]);
             int resposta = Combat(_op,p2,p1);
             Console.WriteLine(resposta);
-            Console.WriteLine($"-----------------------------------------");
+            Console.WriteLine("-----------------------------------------");
             /* 
                P1   |  P2
             hp=5    |hp=3
@@ -50,8 +59,8 @@ namespace grapeJuice
             */
             Console.WriteLine($"Vida do personagem 1= {p1.GEThp()}");
             Console.WriteLine($"Vida do personagem 2= {p2.GEThp()}");
-            Console.WriteLine($"-----------------------------------------");
-            Console.WriteLine($"Personagem 1 atacando Personagem 2....");
+            Console.WriteLine("-----------------------------------------");
+            Console.WriteLine("Personagem 1 atacando Personagem 2....");
 
             /* 
                P1   |  P2
