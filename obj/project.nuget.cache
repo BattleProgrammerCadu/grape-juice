@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j1YiL54QH1jdsr9lLrVpnHIuazrvkyMp0MeBdZDDm7sRd/3FFWSLAXZERi7w8gcQzVhMGG4I4KIvcQmMXGjmUw==",
+  "dgSpecHash": "PKe5xQDleqQwCZLkNNdRVRMo20ut3sBYGjsEJdrqqH2hdzVGWzDWQd5XJmz79uq36XwD1ANi/0qYoRLB+Liv+w==",
   "success": true,
-  "projectFilePath": "C:\\workspace\\Projects\\grape-juice\\grapeJuice.csproj",
+  "projectFilePath": "e:\\Dev\\workspace\\dotnet\\grapeJuice\\grapeJuice.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
