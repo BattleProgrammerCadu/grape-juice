@@ -10,9 +10,11 @@ namespace grapeJuice
             int _atk;
             int _def;
             int _evs;
+            string _nome;
 
             //CONSTRUCT
-            public Personagem(int hp, int atk, int def, int evs){
+            public Personagem(string nome, int hp, int atk, int def, int evs){
+            _nome = nome;
             _hp = hp;
             _atk = atk;
             _def = def;
@@ -36,6 +38,9 @@ namespace grapeJuice
             }
             public int GETevs(){
                 return _evs;            
+            }
+            public string GETname(){
+                return _nome;
             }
             //SET
             public int SEThp(int dmg){
