@@ -18,7 +18,13 @@ namespace grapeJuice
         //Condição para o dano se defesa: se atk > def o dano é = atk - def, se def > atk o dano é = 1
         //Condição para o dano se evasão: se atk > evs o dano é = atk , se evs > atk o dano é = 0
         void Combat(Personagem atacante, Personagem defensor){
-
+            
+        }
+        int atk(Personagem atacante){
+            return 0;
+        }
+        int def(Personagem defensor){
+            return 0;
         }
     }
 }
