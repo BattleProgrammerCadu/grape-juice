@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\Dev\\workspace\\dotnet\\grapeJuice\\grapeJuice.csproj": {}
+    "E:\\Dev\\workspace\\dotnet\\grapeJuice\\grapeJuice.csproj": {}
   },
   "projects": {
-    "e:\\Dev\\workspace\\dotnet\\grapeJuice\\grapeJuice.csproj": {
+    "E:\\Dev\\workspace\\dotnet\\grapeJuice\\grapeJuice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Dev\\workspace\\dotnet\\grapeJuice\\grapeJuice.csproj",
+        "projectUniqueName": "E:\\Dev\\workspace\\dotnet\\grapeJuice\\grapeJuice.csproj",
         "projectName": "grapeJuice",
-        "projectPath": "e:\\Dev\\workspace\\dotnet\\grapeJuice\\grapeJuice.csproj",
+        "projectPath": "E:\\Dev\\workspace\\dotnet\\grapeJuice\\grapeJuice.csproj",
         "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-        "outputPath": "e:\\Dev\\workspace\\dotnet\\grapeJuice\\obj\\",
+        "outputPath": "E:\\Dev\\workspace\\dotnet\\grapeJuice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config"
